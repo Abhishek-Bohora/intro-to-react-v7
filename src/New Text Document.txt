@@ -1,0 +1,32 @@
+//prettier
+npx prettier src/App.js //shows in terminal how it format the code
+npx prettier src/App.js --write  //format the code
+ "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
+  }
+
+
+//Eslint
+//you have declared the variable that you have never used
+//code opinion, structures of code, what the code is doing that's where you want eslint
+npx eslint src/App.js
+
+
+//parcel
+//Now you have parcel you can split your code into various different pieces before you can't do it because nothing was bundling it
+//back together eg: we now move pet component back into its own file
+
+"browserslist":[
+    "last 2 Chrome versions"
+  ]  //telling parcel to compile for last 2 chrome versions
+
+
+//Here we setup our own create-react-app environment
+
+npm audit //to see the vulnerabilities
+
+npm install -D eslint-plugin-import@2.25.4 eslint-plugin-jsx-a11y@6.5.1 eslint-plugin-react@7.28.0  
+  
+
+//REACT NOTES
+//one component does one thing
